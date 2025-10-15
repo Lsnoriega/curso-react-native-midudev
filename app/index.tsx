@@ -1,19 +1,15 @@
-import { StyleSheet, View } from "react-native";
+import { StyleSheet } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
-import { Logo } from "./components/Logo";
+import "../global.css";
 import { Main } from "./components/Main";
 
 export default function Index() {
   
   return (
     <SafeAreaProvider>
-      
-    <View style={styles.container}>
-      <View style={{ marginTop:20, }}>
-      <Logo width="176" height="40" />
-      </View>
+    {/* <View style={styles.container}> */}
     <Main/>
-    </View>
+    {/* </View> */}
     </SafeAreaProvider>
   );
 
@@ -25,7 +21,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#000",
-    paddingVertical: 40,
   },
 }); 
 
