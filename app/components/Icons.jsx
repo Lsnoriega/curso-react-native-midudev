@@ -1,10 +1,21 @@
+import FontAwesome from '@expo/vector-icons/FontAwesome';
+import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
+import Svg, { Path } from "react-native-svg";
 
-import Svg, { Path } from "react-native-svg"
+export const CircleInfoIcon = (props) => {
+return <FontAwesome6 name="circle-info" size={24} color="white" {...props} />
+};
+
+export const HomeIcon = (props) => (
+    <FontAwesome name="home" size={24} color="black" {...props}/>
+)
+
+
 export const Logo = (props) => (
   <Svg
     xmlns="http://www.w3.org/2000/svg"
-    width={1000.099}
-    height={305.488}
+    width={176.099}
+    height={45.488}
     viewBox="0 0 264.61 80.827"
     {...props}
   >
@@ -199,4 +210,5 @@ export const Logo = (props) => (
     />
   </Svg>
 )
+
 
