@@ -1,13 +1,12 @@
-import FontAwesome from '@expo/vector-icons/FontAwesome';
-import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import Svg, { Path } from "react-native-svg";
 
 export const CircleInfoIcon = (props) => {
-return <FontAwesome6 name="circle-info" size={24} color="white" {...props} />
+return <FontAwesome5 name="info-circle" size={24} color="black" {...props} />
 };
 
 export const HomeIcon = (props) => (
-    <FontAwesome name="home" size={24} color="black" {...props}/>
+    <FontAwesome5 name="home" size={24} color="black" {...props}/>
 )
 
 
